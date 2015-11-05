@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="http://css-spinners.com/css/spinner/spinner.css" type="text/css">-->
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+</head>
+<body>
+<div id='content' >
+<!--<div class="spinner-loader">-->
+    <!--Loading…-->
+<!--</div>-->
+</div>
+
+<div class="progress">
+
+</div>
+    <form id="generateEmployee">
+        <p>Enter Number of Employees</p>
+        <input type="number" id="numberEmployees" name="numberEmployees" placeholder="Enter Number of Employees">
+
+        <p>Select Gender of Employees</p>
+        <div class="radio">
+            <label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" id="both" name="gender" value="both" checked> Both
+            </label>
+        </div>
+
+        <p>Enter Salary Range (Min & Max)</p>
+        <input type="number" id="salaryMin" name="salaryMin" placeholder="Min">
+        <input type="number" id="salaryMax" name="salaryMax" placeholder="Max">
+
+        <br>
+        <p>Enter Years of Service Range (Min & Max)</p>
+        <input type="number" id="yearsMin" name="yearsMin" placeholder="Min">
+        <input type="number" id="yearsMax" name="yearsMax" placeholder="Max">
+
+        <button id="submit" class="btn btn-info">Submit</button>
+
+        <!--<input type="range" id="salaryRange" name="salaryRange" min="50000" max="150000" steps="10000" value="75000">-->
+
+        <!--<input type="range" id="yearsRange" name="yearsRange" min="0" max="50" steps="1" value="1">-->
+
+    </form>
+
+</body>
+</html>
