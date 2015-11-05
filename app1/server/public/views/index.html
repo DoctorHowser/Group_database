@@ -3,59 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-
+    ​
     <link rel="stylesheet" href="/vendors/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="http://css-spinners.com/css/spinner/spinner.css" type="text/css">-->
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/app.js"></script>
 </head>
 <body>
-<div id='content' >
-<!--<div class="spinner-loader">-->
-    <!--Loading…-->
-<!--</div>-->
+​
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form id="generateEmployee" class="well" style="margin-top: 20px">
+                <div class="form-group">
+                    <label for="numberEmployees">Enter Number of Employees</label>
+                    <input type="number" id="numberEmployees" class="form-control" name="numberEmployees" placeholder="Enter Number of Employees">
+                </div>
+                <p style="font-weight: 700">Select Gender of Employees</p>
+                <div class="radio">
+                    <label>
+                        <input type="radio" id="male" name="gender" value="male"> Male
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" id="both" name="gender" value="both" checked> Both
+                    </label>
+                </div>
+                ​
+                <div class="form-group">
+                    <label for="salaryMax">Enter Salary (Min & Max)</label>
+                    <input type="number" id="salaryMin" name="salaryMin" placeholder="Min">
+                    <input type="number" id="salaryMax" name="salaryMax" placeholder="Max">
+                </div>
+                ​
+                <div class="form-group">
+                    <label for="yearsMin">Enter Years of Service (Min & Max)</label>
+                    <input type="number" id="yearsMin" name="yearsMin" placeholder="Min">
+                    <input type="number" id="yearsMax" name="yearsMax" placeholder="Max">
+                </div>
+                <button id="submit" class="btn btn-info">Submit</button>
+                <div id="progress">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div id="content" class="lead"></div>
+                ​
+            </form>
+        </div>
+    </div>
 </div>
-
-<div class="progress">
-
-</div>
-    <form id="generateEmployee">
-        <p>Enter Number of Employees</p>
-        <input type="number" id="numberEmployees" name="numberEmployees" placeholder="Enter Number of Employees">
-
-        <p>Select Gender of Employees</p>
-        <div class="radio">
-            <label>
-                <input type="radio" id="male" name="gender" value="male"> Male
-            </label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" id="female" name="gender" value="female"> Female
-            </label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" id="both" name="gender" value="both" checked> Both
-            </label>
-        </div>
-
-        <p>Enter Salary Range (Min & Max)</p>
-        <input type="number" id="salaryMin" name="salaryMin" placeholder="Min">
-        <input type="number" id="salaryMax" name="salaryMax" placeholder="Max">
-
-        <br>
-        <p>Enter Years of Service Range (Min & Max)</p>
-        <input type="number" id="yearsMin" name="yearsMin" placeholder="Min">
-        <input type="number" id="yearsMax" name="yearsMax" placeholder="Max">
-
-        <button id="submit" class="btn btn-info">Submit</button>
-
-        <!--<input type="range" id="salaryRange" name="salaryRange" min="50000" max="150000" steps="10000" value="75000">-->
-
-        <!--<input type="range" id="yearsRange" name="yearsRange" min="0" max="50" steps="1" value="1">-->
-
-    </form>
-
 </body>
 </html>

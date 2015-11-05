@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start1": "node app1/server/app.js",
-    "start2": "node app2/server/app.js"
+    "start": "node app1/server/app.js",
+    "make": "node app2/server/app.js"
   },
   "author": "Zeeshan, Mike, Pui, Dana, and Dane",
   "license": "ISC",
