@@ -8,7 +8,7 @@
     "start1": "node app1/server/app.js",
     "start2": "node app2/server/app.js"
   },
-  "author": "Zeeshan, Mike, and Pui",
+  "author": "Zeeshan, Mike, Pui, Dana, and Dane",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.1",
